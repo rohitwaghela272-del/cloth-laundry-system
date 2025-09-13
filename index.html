@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickWash - Cloth Laundrying System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">QuickWash</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600">Services</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-blue-600">How It Works</a>
+                <a href="#order" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Place Order</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+             <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+             <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+             <a href="#how-it-works" class="block py-2 text-gray-600 hover:text-blue-600">How It Works</a>
+             <a href="#order" class="block mt-2 bg-blue-600 text-white text-center px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Place Order</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20">
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Fresh Clothes, Fresh Life.</h1>
+            <p class="text-xl text-gray-600 mb-8">Professional laundry and dry cleaning services at your doorstep.</p>
+            <a href="#order" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition duration-300">Schedule a Pickup</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <i class="fas fa-tshirt fa-3x text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Wash & Fold</h3>
+                    <p class="text-gray-600">Perfect for your everyday laundry. We wash, dry, and fold with care.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <i class="fas fa-user-tie fa-3x text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Dry Cleaning</h3>
+                    <p class="text-gray-600">Gentle on your delicate fabrics. Ideal for suits, dresses, and special garments.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                     <i class="fas fa-熨斗 fa-3x text-blue-600 mb-4" style="font-family: 'Font Awesome 6 Free'; font-weight: 900;"></i>
+                    <h3 class="text-xl font-semibold mb-2">Ironing Service</h3>
+                    <p class="text-gray-600">Get perfectly pressed clothes without the hassle. Crisp and ready to wear.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="py-16 bg-white rounded-lg shadow-md">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How It Works in 3 Easy Steps</h2>
+            <div class="flex flex-col md:flex-row justify-around items-center text-center">
+                <div class="step mb-8 md:mb-0">
+                    <div class="bg-blue-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-calendar-alt fa-3x text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">1. Schedule Pickup</h3>
+                    <p class="text-gray-600 px-4">Book a convenient pickup slot online using our simple form.</p>
+                </div>
+                 <div class="step mb-8 md:mb-0">
+                    <div class="bg-blue-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-box-open fa-3x text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">2. We Collect & Clean</h3>
+                    <p class="text-gray-600 px-4">Our team will collect your laundry from your doorstep and clean it professionally.</p>
+                </div>
+                 <div class="step">
+                    <div class="bg-blue-100 rounded-full w-24 h-24 flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-truck fa-3x text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">3. We Deliver</h3>
+                    <p class="text-gray-600 px-4">Get fresh, clean clothes delivered back to you at the scheduled time.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Form Section -->
+        <section id="order" class="py-16">
+            <div class="max-w-4xl mx-auto bg-white p-8 sm:p-12 rounded-lg shadow-md">
+                <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Place Your Order</h2>
+                <form id="laundry-form">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" id="name" name="name" placeholder="Full Name" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="email" id="email" name="email" placeholder="Email Address" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                         <select id="service-type" name="service-type" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">Select Service</option>
+                            <option value="1">Wash & Fold</option>
+                            <option value="2">Dry Cleaning</option>
+                            <option value="3">Ironing Service</option>
+                        </select>
+                        <input type="date" id="pickup-date" name="pickup-date" placeholder="Pickup Date" class="w-full p-3 border border-gray-300 rounded-lg text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <input type="time" id="pickup-time" name="pickup-time" placeholder="Pickup Time" class="w-full p-3 border border-gray-300 rounded-lg text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <textarea id="address" name="address" placeholder="Pickup & Delivery Address" rows="4" class="w-full mt-6 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                    <button type="submit" class="w-full mt-6 bg-blue-600 text-white p-4 rounded-lg font-semibold text-lg hover:bg-blue-700 transition duration-300">Confirm Order</button>
+                </form>
+                <div id="form-message" class="mt-4 text-center"></div>
+            </div>
+        </section>
+        
+        <!-- Order Tracking Section -->
+        <section id="tracking" class="py-16">
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md text-center">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6">Track Your Order</h2>
+                 <p class="text-gray-600 mb-6">Enter your Order ID to see the status of your laundry.</p>
+                 <div class="flex">
+                    <input type="text" id="order-id-input" placeholder="Enter Order ID" class="w-full p-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button id="track-order-btn" class="bg-blue-600 text-white px-6 py-3 rounded-r-lg font-semibold hover:bg-blue-700 transition duration-300">Track</button>
+                 </div>
+                 <div id="tracking-status" class="mt-6 text-left"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 QuickWash. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
