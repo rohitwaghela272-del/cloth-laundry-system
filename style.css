@@ -1,0 +1,20 @@
+/* Custom Styles for Cloth Laundrying System */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Make date and time input placeholder text visible */
+input[type="date"]:before,
+input[type="time"]:before {
+    color: #9ca3af; /* gray-400 */
+    content: attr(placeholder);
+    width: 100%;
+}
+
+input[type="date"].has-value:before,
+input[type="time"].has-value:before,
+input[type="date"]:focus:before,
+input[type="time"]:focus:before {
+    display: none;
+}
